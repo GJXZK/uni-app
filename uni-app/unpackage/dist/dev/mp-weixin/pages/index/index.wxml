@@ -1,0 +1,1 @@
+<view class="content"><image class="logo" src="/static/logo.png"></image><view class="text-area"><text class="title">{{title}}</text></view><view>我只在小程序里</view><navigator url="../message/message" open-type="switchTab">我要去List</navigator><button type="primary" data-event-opts="{{[['tap',[['navigatorTo',['$event']]]]]}}" bindtap="__e">导航跳转</button></view>

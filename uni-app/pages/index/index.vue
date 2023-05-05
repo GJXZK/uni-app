@@ -4,6 +4,19 @@
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 		</view>
+		
+		<!-- #ifdef H5-->
+		<view>
+			我只在H5里
+		</view>
+		<!-- #endif -->
+		<!-- #ifdef MP-WEIXIN-->
+		<view>
+			我只在小程序里
+		</view>
+		<!-- #endif -->
+		<navigator url="../message/message" open-type="switchTab">我要去List</navigator>
+		<button type="primary" @click="navigatorTo">导航跳转</button>
 	</view>
 </template>
 
@@ -14,12 +27,20 @@
 				title: 'Hello'
 			}
 		},
-		onLoad() {
-
+		onLoad(options) {
+			console.log("页面加载了", options);
 		},
 		methods: {
+			
+			navigatorTo() {
+				uni.navigateTo({
+					url: '/pages/List/List'
+				})
+			}
+		},
 
-		}
+		// #ifdef H5
+		// #endif
 	}
 </script>
 

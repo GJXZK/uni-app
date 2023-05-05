@@ -1,0 +1,1 @@
+<view><swiper-box vue-id="6a1c5e00-1" bannerList="{{bannerList}}" bind:__l="__l"></swiper-box></view>

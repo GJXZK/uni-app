@@ -1,0 +1,1 @@
+<view class="swiperbox"><view class="uni-margin-wrap"><swiper class="swiper" circular="{{true}}" autoplay="true" interval="3000" duration="500"><block wx:for="{{bannerList}}" wx:for-item="item" wx:for-index="__i0__"><swiper-item><view><image src="{{item.image_src}}" mode="aspectFit"></image></view></swiper-item></block></swiper></view></view>
